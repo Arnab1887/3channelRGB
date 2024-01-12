@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #2980b9, #8e44ad);
+      font-family: sans-serif;
+      overflow: hidden;
+      height: 100vh;
+    }
+    .main-box {
+      position: absolute;
+      background: white;
+      width: 800px;
+      height: 400px;
+      left: 50%;
+      top: 40%;
+      box-sizing: border-box;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      margin: 0;
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 90%;
+    }
+  </style>
+
+  <body>
+    <div class="main-box">
+      <h1 style="text-align: center;">Live streaming</h1>
+      <img src="{{ url_for('video') }}"/>
+    </div>       
+    </body>
+
+
+</html>
